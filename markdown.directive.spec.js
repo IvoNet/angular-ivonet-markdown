@@ -40,6 +40,39 @@ describe('ivoMarkdown', function () {
    });
 
 });
+describe('ivoMarkdown', function () {
+   "use strict";
+
+   var $compile,
+       $rootScope;
+
+   beforeEach(module('ngSanitize'));
+   beforeEach(module('hljs'));
+   beforeEach(module('ivoMarkdown'));
+
+   beforeEach(inject(function (_$compile_, _$rootScope_) {
+      $compile = _$compile_;
+      $rootScope = _$rootScope_;
+   }));
+
+
+   it('should works as an attribute', function () {
+      var element = angular.element('<div ivo-markdown># header</div>');
+      $compile(element)($rootScope);
+      expect(element.html()).toBe('<h1>header</h1>');
+   });
+
+   it('Should watch the scope variable and change accordingly', function () {
+      var element = angular.element('<div ivo-markdown="markdown"></div>');
+      $rootScope.markdown="# header";
+      $compile(element)($rootScope);
+      $rootScope.$digest();
+      expect(element.html()).toBe('<h1>header</h1>');
+      $rootScope.markdown="*bold*";
+      $rootScope.$digest();
+      expect(element.html()).toBe('<p><em>bold</em></p>');
+   })
+});
 
 describe('ivoMarkdownConverter with extensions: table', function () {
    var $compile,
@@ -221,7 +254,6 @@ describe('ivoMarkdownConverter adjusted code formatting', function () {
       $compile = _$compile_;
       $rootScope = _$rootScope_;
    }));
-
 
    it('should highlight python code', function () {
       var element = angular.element("<ivo-markdown>```python\n\nimport IvoNet\n\ndef hello():\n    print 'hello world'\n```</ivo-markdown>");

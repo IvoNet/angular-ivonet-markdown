@@ -6,9 +6,15 @@ A markdown directive for AngularJS (1.x).
 
 See for an demo this [plunker]() or the example in this project.
 
+## Build the project
+
+```sh
+bower install
+```
+
+Start hacking...
 
 ## Mandatory Dependencies
-
 
 ```sh
 bower install highlightjs --save
