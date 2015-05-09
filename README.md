@@ -17,22 +17,22 @@ bower install IvoNet/angular-ivonet-markdown
 add to your html:
 
 ```html
-<script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
-<script src="/bower_components/highlightjs/highlight.pack.js"></script>
-<script src="/bower_components/angular-highlightjs/build/angular-highlightjs.js"></script>
-<script src="/bower_components/showdown/src/showdown.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="bower_components/highlightjs/highlight.pack.js"></script>
+<script src="bower_components/angular-highlightjs/build/angular-highlightjs.js"></script>
+<script src="bower_components/showdown/src/showdown.js"></script>
 
-<script src="/bower_components/angular-ivonet-markdown/markdown.directive.js"></script>
+<script src="bower_components/angular-ivonet-markdown/markdown.directive.js"></script>
 ```
 
 if you installed the optional dependencies than don't forget to add them to the html:
 
 ```html
-<script src="/bower_components/showdown-twitter/dist/showdown-twitter.js"></script>
-<script src="/bower_components/showdown-table/dist/showdown-table.js"></script>
-<script src="/bower_components/showdown-github/dist/showdown-github.js"></script>
-<script src="/bower_components/showdown-prettify/dist/showdown-prettify.js"></script>
-<script src="/bower_components/showdown-target-blank/dist/showdown-target-blank.js"></script>
+<script src="bower_components/showdown-twitter/dist/showdown-twitter.js"></script>
+<script src="bower_components/showdown-table/dist/showdown-table.js"></script>
+<script src="bower_components/showdown-github/dist/showdown-github.js"></script>
+<script src="bower_components/showdown-prettify/dist/showdown-prettify.js"></script>
+<script src="bower_components/showdown-target-blank/dist/showdown-target-blank.js"></script>
 ```
 
 Start hacking...
