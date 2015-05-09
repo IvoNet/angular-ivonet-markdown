@@ -4,15 +4,6 @@
  * @name ivoMarkdown.directive:ivoMarkdown
  * @author: ivo Woltring
  * @description
- * Installation:
- * bower install showdown --save
- * bower install showdown-table --save
- * bower install showdown-prettify --save
- * bower install showdown-github --save
- * bower install showdown-twitter --save
- * bower install showdown-target-blank --save
- * bower install angular-sanitize --save
- * bower install highlightjs --save
  * Add 'ivoMarkdown' to your angular module dependencies
  * your html needs something like this:
  <pre>
