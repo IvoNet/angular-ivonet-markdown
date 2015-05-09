@@ -17,7 +17,22 @@ bower install IvoNet/angular-ivonet-markdown
 add to your html:
 
 ```html
+<script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script src="/bower_components/highlightjs/highlight.pack.js"></script>
+<script src="/bower_components/angular-highlightjs/build/angular-highlightjs.js"></script>
+<script src="/bower_components/showdown/src/showdown.js"></script>
 
+<script src="/bower_components/angular-ivonet-markdown/markdown.directive.js"></script>
+```
+
+if you installed the optional dependencies than don't forget to add them to the html:
+
+```html
+<script src="/bower_components/showdown-twitter/dist/showdown-twitter.js"></script>
+<script src="/bower_components/showdown-table/dist/showdown-table.js"></script>
+<script src="/bower_components/showdown-github/dist/showdown-github.js"></script>
+<script src="/bower_components/showdown-prettify/dist/showdown-prettify.js"></script>
+<script src="/bower_components/showdown-target-blank/dist/showdown-target-blank.js"></script>
 ```
 
 Start hacking...
@@ -47,35 +62,6 @@ bower install showdown-target-blank --save
 
 I have included some of these in my example.
 
-
-## Code Snippets
-
-Sample Angular module with the ivoMarkdown module injected and with some 
-extensions configured in the provider of the directive
-```js
-(function () {
-    angular.module('MarkdownExampleApp', ['ivoMarkdown'])
-    .config(function (ivoMarkdownConfigProvider) {
-        ivoMarkdownConfigProvider.config({extensions: ['github', 'table']})
-    })
-    .controller('MarkdownController', MarkdownController);
-    function MarkdownController() {
-        this.markdown = "**Hello World**";
-    }
-})();
-```
-
-Html controller and usage of the directive:
-
-```html
-<ivo-markdown># Hello World</ivo-markdown>
-
-<div ng-controller="MarkdownController as mm">
-    <textarea ng-model="mm.markdown"></textarea>
-    <div ivo-markdown="mm.markdown"></div>
-</div>
-
-```
 
 ## License
 
