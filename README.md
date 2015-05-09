@@ -6,10 +6,18 @@ A markdown directive for AngularJS (1.x).
 
 See for an demo this [plunker](http://plnkr.co/edit/SCPkcZjRCghoavJpRJij?p=preview) or the example in this project.
 
-## Build the project
+## Install
+
+install:
 
 ```sh
-bower install
+bower install IvoNet/angular-ivonet-markdown
+```
+
+add to your html:
+
+```html
+
 ```
 
 Start hacking...

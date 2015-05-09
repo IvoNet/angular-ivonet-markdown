@@ -5,6 +5,7 @@
     "Ivo Woltring <webmaster@ivonet.nl>"
   ],
   "description": "AngularJS markdown directive with code highlighting based on highlightjs.",
+  "main": "markdown.directive.js",
   "keywords": [
     "Showdown",
     "Angular",
