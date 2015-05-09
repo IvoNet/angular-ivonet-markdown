@@ -4,7 +4,7 @@ A markdown directive for AngularJS (1.x).
 
 ## Features
 
-See for an demo this [plunker]() or the example in this project.
+See for an demo this [plunker](http://plnkr.co/edit/SCPkcZjRCghoavJpRJij?p=preview) or the example in this project.
 
 ## Build the project
 
