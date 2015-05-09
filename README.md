@@ -21,7 +21,6 @@ add to your html:
 <script src="bower_components/highlightjs/highlight.pack.js"></script>
 <script src="bower_components/angular-highlightjs/build/angular-highlightjs.js"></script>
 <script src="bower_components/showdown/src/showdown.js"></script>
-
 <script src="bower_components/angular-ivonet-markdown/markdown.directive.js"></script>
 ```
 
