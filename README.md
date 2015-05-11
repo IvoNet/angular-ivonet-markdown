@@ -36,6 +36,10 @@ if you installed the optional dependencies than don't forget to add them to the 
 
 Start hacking...
 
+## Configuration
+
+Please look at the unit tests for examples.
+
 ## Mandatory Dependencies
 
 ```sh
@@ -71,3 +75,7 @@ I have included some of these in my example.
 This directive is based on [btford's](https://github.com/btford/angular-markdown-directive) directive.
 Thanks for the idea I hope I improved on it.
 
+
+## TODO
+
+* Add minification and dist job
