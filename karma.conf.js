@@ -40,8 +40,8 @@ module.exports = function (config) {
          'bower_components/showdown-table/dist/showdown-table.js',
          'bower_components/showdown-prettify/dist/showdown-prettify.js',
          'bower_components/showdown-twitter/dist/showdown-twitter.js',
-         'markdown.directive.js',
-         '*.spec.js'
+         'src/**/*.js',
+         'test/**/*.spec.js'
       ],
 
       // list of files to exclude
@@ -50,7 +50,7 @@ module.exports = function (config) {
 
       // preprocess matching files before serving them to the browser
       // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-      preprocessors: {'*.js': ['coverage']},
+      preprocessors: {'src/**/*.js': ['coverage']},
 
 
 

@@ -14,10 +14,6 @@
  * limitations under the License.
  */
 
-/**
- * Created by ivonet.
- */
-
 describe('ivoMarkdown basic usage tests', function () {
    "use strict";
 

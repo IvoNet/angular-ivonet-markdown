@@ -28,7 +28,7 @@ add to your html:
 <script src="bower_components/highlightjs/highlight.pack.js"></script>
 <script src="bower_components/angular-highlightjs/build/angular-highlightjs.js"></script>
 <script src="bower_components/showdown/src/showdown.js"></script>
-<script src="bower_components/angular-ivonet-markdown/markdown.directive.js"></script>
+<script src="bower_components/angular-ivonet-markdown/dist/markdown.directive.min.js"></script>
 ```
 
 if you installed the optional dependencies than don't forget to add them to the html:
@@ -83,6 +83,3 @@ This directive is based on [btford's](https://github.com/btford/angular-markdown
 Thanks for the idea I hope I improved on it.
 
 
-## TODO
-
-* Add minification and dist job
