@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+
 /**
  * @ngdoc directive
  * @restrict A
@@ -28,6 +29,7 @@
  </pre>
  */
 (function () {
+
    angular.module('ivoMarkdown', [
       'ngSanitize',
       'hljs'
@@ -45,7 +47,7 @@
             },
             $get: function () {
                hljsServiceProvider.setOptions(hljsOpts);
-               return new Showdown.converter(showdownOpts);
+               return new showdown.Converter(showdownOpts);
             }
          };
       }
@@ -78,4 +80,3 @@
       }
    ]);
 })();
-
