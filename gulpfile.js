@@ -26,6 +26,7 @@ var src = {
    dist: 'dist'
 };
 
+//noinspection JSUnusedLocalSymbols
 function preserveLicenseComment(node, comment) {
    return /Copyright|Apache|License/.test(comment.value);
 }
