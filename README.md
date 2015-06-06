@@ -14,6 +14,13 @@ install:
 bower install angular-ivonet-markdown
 ```
 
+or
+
+```sh
+npm install angular-ivonet-markdown
+```
+
+
 add to your html:
 
 ```html
