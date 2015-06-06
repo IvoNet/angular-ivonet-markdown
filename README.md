@@ -11,7 +11,7 @@ See for an demo this [plunker](http://plnkr.co/edit/SCPkcZjRCghoavJpRJij?p=previ
 install:
 
 ```sh
-bower install IvoNet/angular-ivonet-markdown
+bower install angular-ivonet-markdown
 ```
 
 add to your html:

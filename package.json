@@ -1,0 +1,30 @@
+{
+  "name": "angular-ivonet-markdown",
+  "version": "1.0.0",
+  "description": "AngularJS markdown directive with code highlighting and fully configurable",
+  "main": "markdown.directive.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "karma start karma.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IvoNet/angular-ivonet-markdown.git"
+  },
+  "keywords": [
+    "Showdown",
+    "Angular",
+    "markdown",
+    "highlightjs",
+    "markdown",
+    "code"
+  ],
+  "author": "Ivo Woltring",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/IvoNet/angular-ivonet-markdown/issues"
+  },
+  "homepage": "https://github.com/IvoNet/angular-ivonet-markdown"
+}

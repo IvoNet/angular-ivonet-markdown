@@ -1,3 +1,19 @@
+/*
+ * Copyright 2015 Ivo Woltring <Webmaster@ivonet.nl>
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 /**
  * Created by ivonet.
  */
@@ -33,7 +49,7 @@ describe('ivoMarkdown basic usage tests', function () {
 
 
    it('should not create tables from markdown tables', function () {
-      var element = angular.element("<ivo-markdown>|Markdown | Less | Pretty |\n|---: | --: | ---: |\n|1 | 2 | 3|\n</ivo-markdown>")
+      var element = angular.element("<ivo-markdown>|Markdown | Less | Pretty |\n|---: | --: | ---: |\n|1 | 2 | 3|\n</ivo-markdown>");
       $compile(element)($rootScope);
       expect(element.html()).toBe("<p>|Markdown | Less | Pretty |\n|---: | --: | ---: |\n|1 | 2 | 3|</p>");
 
@@ -103,7 +119,7 @@ describe('ivoMarkdownConverter with extensions: twitter', function () {
 
 
    it('should now create twitter links', function () {
-      var element = angular.element("<ivo-markdown>@ivonet</ivo-markdown>")
+      var element = angular.element("<ivo-markdown>@ivonet</ivo-markdown>");
       $compile(element)($rootScope);
       expect(element.html()).toBe("<p><a href=\"http://twitter.com/ivonet\">@ivonet</a></p>");
    })
@@ -140,7 +156,7 @@ describe('ivoMarkdownConverter with extensions: twitter, targetblank', function 
    });
 
    it('should now not show deleted text because the github extension is not installed in this test', function () {
-      var element = angular.element("<ivo-markdown>~~deleted tekst~~</ivo-markdown>")
+      var element = angular.element("<ivo-markdown>~~deleted tekst~~</ivo-markdown>");
       $compile(element)($rootScope);
       expect(element.html()).toBe("<p>~~deleted tekst~~</p>");
    });
@@ -167,13 +183,13 @@ describe('ivoMarkdownConverter with extensions: github', function () {
    }));
 
    it('should now not create a twitter link because the twitter extension is not installed in this test', function () {
-      var element = angular.element("<ivo-markdown>@ivonet</ivo-markdown>")
+      var element = angular.element("<ivo-markdown>@ivonet</ivo-markdown>");
       $compile(element)($rootScope);
       expect(element.html()).toBe("<p>@ivonet</p>");
    });
 
    it('should now show deleted text', function () {
-      var element = angular.element("<ivo-markdown>~~deleted tekst~~</ivo-markdown>")
+      var element = angular.element("<ivo-markdown>~~deleted tekst~~</ivo-markdown>");
       $compile(element)($rootScope);
       //console.log(element.html());
       expect(element.html()).toBe("<p><del>deleted tekst</del></p>");
