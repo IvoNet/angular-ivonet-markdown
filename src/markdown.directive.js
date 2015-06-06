@@ -28,7 +28,7 @@
  <textarea ng-model="markdown"></textarea>
  </pre>
  */
-(function () {
+(function (showdown) {
 
    angular.module('ivoMarkdown', [
       'ngSanitize',
@@ -79,4 +79,4 @@
          };
       }
    ]);
-})();
+})(showdown);
