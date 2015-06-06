@@ -75,7 +75,7 @@ I have included some of these in my example.
 
 ## License
 
-[MIT](MIT-LICENSE.txt)
+[Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
 ## Acknowledgements
  
