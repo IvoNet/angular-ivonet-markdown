@@ -70,6 +70,8 @@ bower install showdown-twitter --save
 bower install showdown-target-blank --save
 ```
 
+Note: the `showdown-target-blank` is broken at this time but I created a pull request after fixing it in my fork.
+
 I have included some of these in my example.
 
 
