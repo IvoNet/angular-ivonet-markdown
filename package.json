@@ -1,8 +1,8 @@
 {
   "name": "angular-ivonet-markdown",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "AngularJS markdown directive with code highlighting and fully configurable",
-  "main": "dist/markdown.directive.min.js",
+  "main": "dist/angular-ivonet-markdown.min.js",
   "directories": {
     "example": "example"
   },
