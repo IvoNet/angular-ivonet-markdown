@@ -211,19 +211,19 @@ describe('ivoMarkdownConverter default code formatting', function () {
    it('should highlight python code', function () {
       var element = angular.element("<ivo-markdown>```python\n\nimport IvoNet\n\ndef hello():\n    print 'hello world'\n```</ivo-markdown>");
       $compile(element)($rootScope);
-      expect(element.html()).toBe("<pre><code class=\"python hljs\"><span class=\"hljs-keyword\">import</span> IvoNet\n\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">def</span> <span class=\"hljs-title\">hello</span><span class=\"hljs-params\">()</span>:</span>\n    <span class=\"hljs-keyword\">print</span> <span class=\"hljs-string\">\'hello world\'</span>\n</code></pre>");
+      expect(element.html()).toBe("<pre><code class=\"python language-python hljs\"><span class=\"hljs-keyword\">import</span> IvoNet\n\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">def</span> <span class=\"hljs-title\">hello</span><span class=\"hljs-params\">()</span>:</span>\n    <span class=\"hljs-keyword\">print</span> <span class=\"hljs-string\">\'hello world\'</span>\n</code></pre>");
    });
 
    it('should highlight python code and by default replace tabs by 4 spaces', function () {
       var element = angular.element("<ivo-markdown>```python\n\nimport IvoNet\n\ndef hello():\n\tprint 'hello world'\n```</ivo-markdown>");
       $compile(element)($rootScope);
-      expect(element.html()).toBe("<pre><code class=\"python hljs\"><span class=\"hljs-keyword\">import</span> IvoNet\n\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">def</span> <span class=\"hljs-title\">hello</span><span class=\"hljs-params\">()</span>:</span>\n    <span class=\"hljs-keyword\">print</span> <span class=\"hljs-string\">\'hello world\'</span>\n</code></pre>");
+      expect(element.html()).toBe("<pre><code class=\"python language-python hljs\"><span class=\"hljs-keyword\">import</span> IvoNet\n\n<span class=\"hljs-function\"><span class=\"hljs-keyword\">def</span> <span class=\"hljs-title\">hello</span><span class=\"hljs-params\">()</span>:</span>\n    <span class=\"hljs-keyword\">print</span> <span class=\"hljs-string\">\'hello world\'</span>\n</code></pre>");
    });
 
    it('should highlight java code', function () {
       var element = angular.element("<ivo-markdown>```java\npackage nl.ivonet.application;\npublic class Foo {\n\tpublic static void main(String[] args) {\n\t\tSystem.out.println(\"Hello World\");\n\t}\n}\n```</ivo-markdown>");
       $compile(element)($rootScope);
-      expect(element.html()).toBe("<pre><code class=\"java hljs\"><span class=\"hljs-keyword\">package</span> nl.ivonet.application;\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-class\"><span class=\"hljs-keyword\">class</span> <span class=\"hljs-title\">Foo</span> </span>{\n    <span class=\"hljs-function\"><span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">void</span> <span class=\"hljs-title\">main</span><span class=\"hljs-params\">(String[] args)</span> </span>{\n        System.out.println(<span class=\"hljs-string\">\"Hello World\"</span>);\n    }\n}\n</code></pre>");
+      expect(element.html()).toBe("<pre><code class=\"java language-java hljs\"><span class=\"hljs-keyword\">package</span> nl.ivonet.application;\n<span class=\"hljs-keyword\">public</span> <span class=\"hljs-class\"><span class=\"hljs-keyword\">class</span> <span class=\"hljs-title\">Foo</span> </span>{\n    <span class=\"hljs-function\"><span class=\"hljs-keyword\">public</span> <span class=\"hljs-keyword\">static</span> <span class=\"hljs-keyword\">void</span> <span class=\"hljs-title\">main</span><span class=\"hljs-params\">(String[] args)</span> </span>{\n        System.out.println(<span class=\"hljs-string\">\"Hello World\"</span>);\n    }\n}\n</code></pre>");
    });
 
 });
@@ -251,19 +251,19 @@ describe('ivoMarkdownConverter adjusted code formatting', function () {
    it('should highlight python code', function () {
       var element = angular.element("<ivo-markdown>```python\n\nimport IvoNet\n\ndef hello():\n    print 'hello world'\n```</ivo-markdown>");
       $compile(element)($rootScope);
-      expect(element.html()).toBe("<pre><code class=\"python hljs\"><span class=\"YOLO-hljs-keyword\">import</span> IvoNet\n\n<span class=\"YOLO-hljs-function\"><span class=\"YOLO-hljs-keyword\">def</span> <span class=\"YOLO-hljs-title\">hello</span><span class=\"YOLO-hljs-params\">()</span>:</span>\n    <span class=\"YOLO-hljs-keyword\">print</span> <span class=\"YOLO-hljs-string\">\'hello world\'</span>\n</code></pre>");
+      expect(element.html()).toBe("<pre><code class=\"python language-python hljs\"><span class=\"YOLO-hljs-keyword\">import</span> IvoNet\n\n<span class=\"YOLO-hljs-function\"><span class=\"YOLO-hljs-keyword\">def</span> <span class=\"YOLO-hljs-title\">hello</span><span class=\"YOLO-hljs-params\">()</span>:</span>\n    <span class=\"YOLO-hljs-keyword\">print</span> <span class=\"YOLO-hljs-string\">\'hello world\'</span>\n</code></pre>");
    });
 
    it('should highlight python code and by default replace tabs by 4 spaces', function () {
       var element = angular.element("<ivo-markdown>```python\n\nimport IvoNet\n\ndef hello():\n\tprint 'hello world'\n```</ivo-markdown>");
       $compile(element)($rootScope);
-      expect(element.html()).toBe("<pre><code class=\"python hljs\"><span class=\"YOLO-hljs-keyword\">import</span> IvoNet\n\n<span class=\"YOLO-hljs-function\"><span class=\"YOLO-hljs-keyword\">def</span> <span class=\"YOLO-hljs-title\">hello</span><span class=\"YOLO-hljs-params\">()</span>:</span>\n    <span class=\"YOLO-hljs-keyword\">print</span> <span class=\"YOLO-hljs-string\">\'hello world\'</span>\n</code></pre>");
+      expect(element.html()).toBe("<pre><code class=\"python language-python hljs\"><span class=\"YOLO-hljs-keyword\">import</span> IvoNet\n\n<span class=\"YOLO-hljs-function\"><span class=\"YOLO-hljs-keyword\">def</span> <span class=\"YOLO-hljs-title\">hello</span><span class=\"YOLO-hljs-params\">()</span>:</span>\n    <span class=\"YOLO-hljs-keyword\">print</span> <span class=\"YOLO-hljs-string\">\'hello world\'</span>\n</code></pre>");
    });
 
    it('should highlight java code', function () {
       var element = angular.element("<ivo-markdown>```java\npackage nl.ivonet.application;\npublic class Foo {\n\tpublic static void main(String[] args) {\n\t\tSystem.out.println(\"Hello World\");\n\t}\n}\n```</ivo-markdown>");
       $compile(element)($rootScope);
-      expect(element.html()).toBe("<pre><code class=\"java hljs\"><span class=\"YOLO-hljs-keyword\">package</span> nl.ivonet.application;\n<span class=\"YOLO-hljs-keyword\">public</span> <span class=\"YOLO-hljs-class\"><span class=\"YOLO-hljs-keyword\">class</span> <span class=\"YOLO-hljs-title\">Foo</span> </span>{\n    <span class=\"YOLO-hljs-function\"><span class=\"YOLO-hljs-keyword\">public</span> <span class=\"YOLO-hljs-keyword\">static</span> <span class=\"YOLO-hljs-keyword\">void</span> <span class=\"YOLO-hljs-title\">main</span><span class=\"YOLO-hljs-params\">(String[] args)</span> </span>{\n        System.out.println(<span class=\"YOLO-hljs-string\">\"Hello World\"</span>);\n    }\n}\n</code></pre>");
+      expect(element.html()).toBe("<pre><code class=\"java language-java hljs\"><span class=\"YOLO-hljs-keyword\">package</span> nl.ivonet.application;\n<span class=\"YOLO-hljs-keyword\">public</span> <span class=\"YOLO-hljs-class\"><span class=\"YOLO-hljs-keyword\">class</span> <span class=\"YOLO-hljs-title\">Foo</span> </span>{\n    <span class=\"YOLO-hljs-function\"><span class=\"YOLO-hljs-keyword\">public</span> <span class=\"YOLO-hljs-keyword\">static</span> <span class=\"YOLO-hljs-keyword\">void</span> <span class=\"YOLO-hljs-title\">main</span><span class=\"YOLO-hljs-params\">(String[] args)</span> </span>{\n        System.out.println(<span class=\"YOLO-hljs-string\">\"Hello World\"</span>);\n    }\n}\n</code></pre>");
    });
 
 });
