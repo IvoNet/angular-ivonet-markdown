@@ -1,6 +1,6 @@
 {
   "name": "angular-ivonet-markdown",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "AngularJS markdown directive with code highlighting and fully configurable",
   "main": "dist/angular-ivonet-markdown.min.js",
   "directories": {
@@ -22,25 +22,25 @@
     "code"
   ],
   "author": "Ivo Woltring",
-  "license": "Apache 2.0",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/IvoNet/angular-ivonet-markdown/issues"
   },
   "homepage": "https://github.com/IvoNet/angular-ivonet-markdown",
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-concat": "^2.5.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
     "gulp-load-plugins": "^1.2.0",
     "gulp-notify": "^2.2.0",
-    "gulp-uglify": "^1.2.0",
-    "jasmine": "^2.3.1",
-    "jasmine-core": "^2.3.4",
-    "karma": "^0.13.19",
-    "karma-coverage": "^0.5.3",
-    "karma-jasmine": "^0.3.5",
-    "karma-phantomjs-launcher": "^0.2.0",
+    "gulp-uglify": "^1.5.3",
+    "jasmine": "^2.4.1",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-coverage": "^0.5.5",
+    "karma-jasmine": "^0.3.8",
+    "karma-phantomjs-launcher": "^1.0.0",
     "ng-mock-e2e": "^0.1.1",
-    "phantomjs": "^1.9.17",
+    "phantomjs-prebuilt": "^2.1.7",
     "uglify-save-license": "^0.4.1"
   }
 }

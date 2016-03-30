@@ -70,9 +70,11 @@ bower install showdown-twitter --save
 bower install showdown-target-blank --save
 ```
 
-Note: the `showdown-target-blank` is broken at this time but I created a pull request after fixing it in my fork.
-
 I have included some of these in my example.
+
+Notes: 
+* the `showdown-target-blank` is broken at this time but I created a pull request after fixing it in my fork.
+* the `showdown-github` and `showdown-github` have not been updated to the latest dependencies and will give deprecated warnings
 
 
 ## License
